@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🏎️ Mini Car Race</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mini Car Race</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="gameArea">
-    <div class="car"></div>
-  </div>
+  <div class="wrap">
+    <div class="gameArea" id="gameArea">
+      <div class="car" id="player"></div>
+    </div>
 
-  <div class="score">Score: <span id="score">0</span></div>
-  <button id="startBtn">Start Game</button>
+    <div class="ui">
+      <div class="score">Score: <span id="score">0</span></div>
+      <div class="controls">
+        <button id="leftBtn" class="touch">◀</button>
+        <button id="rightBtn" class="touch">▶</button>
+        <button id="startBtn" class="start">Start</button>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
